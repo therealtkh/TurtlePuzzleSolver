@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33027.164
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Turtles", "Turtles\Turtles.csproj", "{7186DF0F-30C6-4486-BE84-02FCAF6E7F5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7186DF0F-30C6-4486-BE84-02FCAF6E7F5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7186DF0F-30C6-4486-BE84-02FCAF6E7F5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7186DF0F-30C6-4486-BE84-02FCAF6E7F5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7186DF0F-30C6-4486-BE84-02FCAF6E7F5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA90004D-F1DA-4154-ABDF-9D75B74ADC51}
+	EndGlobalSection
+EndGlobal
