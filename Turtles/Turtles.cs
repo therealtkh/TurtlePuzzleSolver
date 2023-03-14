@@ -4,8 +4,6 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 
@@ -37,6 +35,7 @@ namespace Turtles
             _backgroundWorker.ProgressChanged += _backgroundWorker_ProgressChanged;
             _backgroundWorker.RunWorkerCompleted += _backgroundWorker_RunWorkerCompleted;
 
+            pb_1.BackgroundImage = new Bitmap("grid_big.png");      // Make sure to have file in same folder
             Bitmap bmp = new Bitmap(pb_1.Size.Width, pb_1.Size.Height);      // Prepare the field
             Graphics g = Graphics.FromImage(bmp);
             g.Clear(Color.Transparent);             // picturebox already has a background image with grid/outlines
@@ -46,7 +45,7 @@ namespace Turtles
             }
             pb_1.Image = bmp;
 
-            tb_1.Text = "Welcome to the Turtle Puzzle Solver by Jonas Ohlsson!" + System.Environment.NewLine;
+            tb_1.Text = "Welcome to the Turtle Puzzle Solver by Jonas O!" + System.Environment.NewLine;
 
             //SolveAll();   //Moved to background thread instead, not suitable to run from here anymore
             //CallesVersion();
@@ -87,7 +86,7 @@ namespace Turtles
         private void InitGraphics()
         {
             int tileSize = 81;      // 81 pixels per card side, directly connected to the files with graphics
-            Bitmap inputBitmap = new Bitmap("cards_big_all.png");
+            Bitmap inputBitmap = new Bitmap("cards_big_all.png");   // Make sure to have file in same folder
             System.Drawing.Imaging.PixelFormat format = System.Drawing.Imaging.PixelFormat.DontCare;    // Unclear how important PixelFormat is...
             // Original image has a black grid, therefore the coordinates add 1,2,3,4 to the starting points
             graphics.Add(new CardGraphics(00, inputBitmap.Clone(new Rectangle(0 * tileSize + 1, 0 * tileSize + 1, tileSize, tileSize), format), 1,   103));

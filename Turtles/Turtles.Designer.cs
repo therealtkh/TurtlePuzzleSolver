@@ -29,7 +29,6 @@ namespace Turtles
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Turtles));
             this.tb_1 = new System.Windows.Forms.TextBox();
             this.pb_1 = new System.Windows.Forms.PictureBox();
             this.btn_start = new System.Windows.Forms.Button();
@@ -51,7 +50,6 @@ namespace Turtles
             // 
             // pb_1
             // 
-            this.pb_1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pb_1.BackgroundImage")));
             this.pb_1.Location = new System.Drawing.Point(12, 12);
             this.pb_1.Name = "pb_1";
             this.pb_1.Size = new System.Drawing.Size(593, 533);

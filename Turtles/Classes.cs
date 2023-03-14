@@ -2,7 +2,7 @@
 
 namespace Turtles
 {
-    // Original puzzle has five colors (where orange is some form of yellow)
+    // Original puzzle has five colors (where orange is some form of yellow / gold)
     public enum TurtleColor { Red, Green, Yellow, Blue, Orange }
     
     // Cards are what we have in deck and what we place on the table
@@ -10,9 +10,9 @@ namespace Turtles
     {
         public string ID { get; }                       // ID will never change
         public TurtleColor TopColor { get; set; }       // Colors according to enum further up
-        public int TopPart { get; set; }                // Bodypart is either 0 (torso) or 1 (butt)
+        public int TopPart { get; set; }                // Bodypart is either 1 (torso) or 0 (butt)
         public TurtleColor BottomColor { get; set; }
-        public int BottomPart { get; set; }
+        public int BottomPart { get; set; }             
         public TurtleColor LeftColor { get; set; }
         public int LeftPart { get; set; }
         public TurtleColor RightColor { get; set; }
@@ -61,9 +61,9 @@ namespace Turtles
     // Instead of storing graphics and unused/default positions in separate lists or arrays...
     public class CardGraphics
     {
-        public string ID { get; }       // ID can be directly compared with Card.ID
-        public Bitmap Image { get; }
-        public int UnusedPosX { get; }
+        public string ID { get; }       // CardGraphics.ID can be directly compared with Card.ID
+        public Bitmap Image { get; }    // Image will never change, it's the original image so to say
+        public int UnusedPosX { get; }  // Base positions to draw card at
         public int UnusedPosY { get; }
 
         public CardGraphics(int id, Bitmap image, int x, int y)
